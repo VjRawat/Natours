@@ -1,0 +1,114 @@
+body{
+    background-color: lightslategray;
+}
+
+#backgroundimage{
+    opacity: 0.6;
+    
+}
+
+.container a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+a:hover{
+    color:white;
+}
+
+.anchor{
+    position: absolute;
+    top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    display: flex;
+    flex-direction: row;
+    padding: 2% 0% 0% 15%;   
+} 
+.anchor a {
+    text-decoration: none;
+}
+.list-item{
+    margin-left: 2rem; 
+    list-style-type: none;
+    padding: 5%;  
+}
+
+/* a.home{
+    position: absolute;
+    top: 2%;
+    left: 6%;
+}
+
+a.bio{
+    position: absolute;
+    top: 2%;
+    left: 18%;
+}
+a.hobby{
+    position: absolute;
+    top: 2%;
+    left: 32%;
+}
+a.gallery{
+    position: absolute;
+    top: 2%;
+    left: 44%;
+}
+a.contact{
+    position: absolute;
+    top: 2%;
+    left: 56%;
+} */
+.name{
+    position: absolute;
+    font-size: 1000%;
+    margin-left: 20%;
+    margin-top: -34%;
+    color: rgb(196, 238, 240);
+    
+}
+@media (min-height: 800px){
+    .name{
+        font-size: 600%;
+    }else{
+        font-size: 1000%
+    }
+}
+#DP{
+    border-radius: 50%;
+    width: 20%;
+    height: 40%;
+    margin-top: -20%;
+    margin-left: 40%;
+    z-index: auto;
+    opacity: 100%;
+}
+
+.bottom{
+    list-style: none;
+    margin-left: 39.5%;
+}
+
+.bottom li{
+    display: inline;
+    margin: 0%;
+    
+}
+.bottom li:hover{
+    opacity: 0.5;
+}
+
+.footer{
+    text-align: center;
+}
+ /* @media (max-height: 600px){ 
+    .nav{
+        padding:0%; 
+    }else{
+        padding: 5%;
+    } */
