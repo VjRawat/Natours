@@ -1,114 +1,35 @@
+/*
+COLORS :
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: lightslategray;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 30px;
 }
 
-#backgroundimage{
-    opacity: 0.6;
-    
-}
+.header {
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(126, 213, 111, 0.8),
+        rgba(40, 180, 131, 0.8)),
+        url(../Images/hero.jpg);
+    background-size: cover;
+    background-position: top;
 
-.container a{
-    position: relative;
-    color: black;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
-a:hover{
-    color:white;
-}
-
-.anchor{
-    position: absolute;
-    top: 0%;
-    margin-left: 0%;
-    margin-right: 0%;
-    display: flex;
-    flex-direction: row;
-    padding: 2% 0% 0% 15%;   
-} 
-.anchor a {
-    text-decoration: none;
-}
-.list-item{
-    margin-left: 2rem; 
-    list-style-type: none;
-    padding: 5%;  
-}
-
-/* a.home{
-    position: absolute;
-    top: 2%;
-    left: 6%;
-}
-
-a.bio{
-    position: absolute;
-    top: 2%;
-    left: 18%;
-}
-a.hobby{
-    position: absolute;
-    top: 2%;
-    left: 32%;
-}
-a.gallery{
-    position: absolute;
-    top: 2%;
-    left: 44%;
-}
-a.contact{
-    position: absolute;
-    top: 2%;
-    left: 56%;
-} */
-.name{
-    position: absolute;
-    font-size: 1000%;
-    margin-left: 20%;
-    margin-top: -34%;
-    color: rgb(196, 238, 240);
-    
-}
-@media (min-height: 800px){
-    .name{
-        font-size: 600%;
-    }else{
-        font-size: 1000%
-    }
-}
-#DP{
-    border-radius: 50%;
-    width: 20%;
-    height: 40%;
-    margin-top: -20%;
-    margin-left: 40%;
-    z-index: auto;
-    opacity: 100%;
-}
-
-.bottom{
-    list-style: none;
-    margin-left: 39.5%;
-}
-
-.bottom li{
-    display: inline;
-    margin: 0%;
-    
-}
-.bottom li:hover{
-    opacity: 0.5;
-}
-
-.footer{
-    text-align: center;
-}
- /* @media (max-height: 600px){ 
-    .nav{
-        padding:0%; 
-    }else{
-        padding: 5%;
-    } */
