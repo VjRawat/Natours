@@ -1,6 +1,6 @@
 .btn {
     &:link,
-    &:visited{
+    &:visited {
         text-transform: uppercase;
         text-decoration: none;
         padding: 1.5rem 4rem;
@@ -10,31 +10,31 @@
         position: relative;
 
 
-    &:hover{
+    &:hover {
         transform: translateY(-.3rem); /* The button will go from bottom to up because in Y-axis negative value move from bottom to up */
         box-shadow: 0 1rem 2rem rgba($color-black, .2);
 
-        &::after{
+        &::after {
             transform: scaleX(1.4) scaleY(1.6);
             opacity: 0;
         }
     }
 
-    &:active{
+    &:active {
         transform: translateY(-.1rem);
         box-shadow: 0 .5rem 1rem rgba($color-black, .2)
     }
 
-    &--white{
+    &--white {
         background-color: $color-white;
         color: $color-gray;
 
-        &::after{
+        &::after {
             background-color: $color-white;
         }
     }
 
-    &::after{
+    &::after {
         content: "";
         display: inline-block;
         height: 100%;
@@ -47,7 +47,7 @@
         transition: all .4s;
     }
 
-    &--animated{
+    &--animated {
         animation: moveInBottom .5s ease-out .75s;
         animation-fill-mode: backwards;
     }
