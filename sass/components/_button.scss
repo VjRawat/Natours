@@ -8,7 +8,7 @@
         border-radius: 10rem;
         transition: all .2s; /* This is also an amination property and it moves the button up and down smoothely*/
         position: relative;
-
+        font-size: $Default-font-size;
 
     &:hover {
         transform: translateY(-.3rem); /* The button will go from bottom to up because in Y-axis negative value move from bottom to up */
@@ -24,7 +24,7 @@
         transform: translateY(-.1rem);
         box-shadow: 0 .5rem 1rem rgba($color-black, .2)
     }
-    
+
     &::after {
         content: "";
         display: inline-block;
@@ -32,11 +32,38 @@
         width: 100%;
         border-radius: 10rem;
         position: absolute;
-        top: 0;
+        top: 0;     
         left: 0;
         z-index: -1;
         transition: all .4s;
     }
 }
+
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        font-size: $Default-font-size;
+        border-bottom: 1px solid $color-primary;
+        padding: 3px;
+        transition: all .2s;
+
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem  rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem  rgba($color-black, .15);
+        transform: translateY(0);
+    }
 
 }
