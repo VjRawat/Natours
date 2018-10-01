@@ -9,6 +9,7 @@
 
 @import "components/button";
 @import "components/composition";
+@import "components/feature-box";
 
 @import "layout/grid";
 @import "layout/header";
@@ -32,3 +33,12 @@
 }
 
 
+.feature-box {
+   background-color: black;
+   color: white;
+   font-size: 2rem;
+}
+
+.xerox {
+    background-color: rgba($color-black, .8);
+}
