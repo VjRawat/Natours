@@ -41,6 +41,20 @@
 
 }
 
+.btn--white {
+    background-color: $color-white;
+    color: $color-gray;
+}
+
+.btn--white::after {
+    background-color: $color-white;
+}
+
+.btn--animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
 .btn-text {
     &:link,
     &:visited {

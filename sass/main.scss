@@ -17,28 +17,11 @@
 @import "pages/home";
 
 
-//Button animation and color code
-.btn--white {
-    background-color: $color-white;
-    color: $color-gray;
-}
-
-.btn--white::after {
-        background-color: $color-white;
-    }
-
-.btn--animated {
-        animation: moveInBottom .5s ease-out .75s;
-        animation-fill-mode: backwards;
-}
-
-
-.feature-box {
-   background-color: black;
-   color: white;
-   font-size: 2rem;
-}
-
-.xerox {
-    background-color: rgba($color-black, .8);
-}
+// .feature-box {
+//     background-color: rgba($color-white, .8);
+//     font-size: 1.5rem;
+//     padding: 2.5rem;
+//     text-align: center;
+//     border-radius: 3px;
+//     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+// }
