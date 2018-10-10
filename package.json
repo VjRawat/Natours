@@ -1,23 +1,22 @@
 {
   "name": "natours",
   "version": "1.0.0",
-  "description": "Landing page for natours",
+  "description": "landing page for natours",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "node-sass": "^4.9.3"
-  },
   "scripts": {
     "compile:sass": "node-sass sass/main.scss CSS/main.css -w"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VjRawat/Natours.git"
+    "url": "git+https://github.com/VjRawat/Hurricanee.git"
   },
-  "author": "Vijay",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VjRawat/Natours/issues"
+    "url": "https://github.com/VjRawat/Hurricanee/issues"
   },
-  "homepage": "https://github.com/VjRawat/Natours#readme"
+  "homepage": "https://github.com/VjRawat/Hurricanee#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
 }
