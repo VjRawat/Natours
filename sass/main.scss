@@ -8,20 +8,13 @@
 @import "base/utilities";
 
 @import "components/button";
+@import "components/card";
 @import "components/composition";
 @import "components/feature-box";
+
 
 @import "layout/grid";
 @import "layout/header";
 
 @import "pages/home";
 
-
-// .feature-box {
-//     background-color: rgba($color-white, .8);
-//     font-size: 1.5rem;
-//     padding: 2.5rem;
-//     text-align: center;
-//     border-radius: 3px;
-//     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-// }
