@@ -44,10 +44,19 @@
 .btn--white {
     background-color: $color-white;
     color: $color-gray;
+
+    &::after {
+    background-color: $color-white;
+    }
 }
 
-.btn--white::after {
-    background-color: $color-white;
+.btn--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+        background-color: $color-primary;
+    }
 }
 
 .btn--animated {
