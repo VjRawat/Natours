@@ -3,4 +3,4 @@
     Made with Advance CSS and SASS
 
 ### Example project of udemy 
-    Credit: @jonasschmedtmann jonasschmedtmann
+    Credit: jonasschmedtmann
