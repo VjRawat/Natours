@@ -14,6 +14,8 @@ $breakpoint arguments choices:
 - tab-land
 - big-desktop
 
+ORDER: Base = typography > general layout + grid > page layout > components
+
 1em = 16px;
 */
 @keyframes moveInLeft {
@@ -68,7 +70,11 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -76,7 +82,6 @@ body {
   /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
-  padding: 3rem;
   font-size: 1.5rem; }
 
 .heading-primary {
@@ -92,12 +97,19 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-size: 5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.04rem;
     animation: moveInRight 1s ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: .5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -450,7 +462,10 @@ body {
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
-  z-index: 5000; }
+  z-index: 5000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s; }
   .pop-up__content {
     position: absolute;
     top: 50%;
@@ -461,7 +476,10 @@ body {
     background-color: #fff;
     border-radius: 3px;
     display: table;
-    overflow: hidden; }
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all .5s .2s; }
   .pop-up__left {
     width: 33.333333%;
     display: table-cell; }
@@ -486,6 +504,24 @@ body {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+  .pop-up:target {
+    opacity: 1;
+    visibility: visible; }
+  .pop-up:target .pop-up__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
+  .pop-up__close:link, .pop-up__close:visited {
+    color: #777;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s;
+    line-height: 1; }
+  .pop-up__close:hover {
+    color: #55c57a; }
 
 .story {
   width: 75%;
