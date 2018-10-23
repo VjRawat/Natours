@@ -16,19 +16,23 @@
         display: block; // For line break
         transition: all .3s;
 
-         &:focus {
-             outline: none;
-             box-shadow: 0 1rem 2rem rgba($color-black, .1);
-             border-bottom: 3px solid $color-primary;
-         }
+        @include respond(tab-port) {
+            width: 100%;
+        }
 
-         &:focus:invalid {
-             border-bottom: 3px solid $color-secondary-dark;
-         }
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            border-bottom: 3px solid $color-primary;
+        }
 
-         &::-webkit-input-placeholder {
-             color: $color-gray-2;
-         }
+        &:focus:invalid {
+            border-bottom: 3px solid $color-secondary-dark;
+        }
+
+        &::-webkit-input-placeholder {
+            color: $color-gray-2;
+        }
     }
 
 
@@ -50,6 +54,11 @@
     &__radio-group {
         width: 49%;
         display: inline-block;
+
+        @include respond(tab-port) {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
     }
 
     &__radio-input {
