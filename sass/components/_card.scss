@@ -16,6 +16,7 @@
         top: 0;
         left: 0;
         width: 100%;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden; // This property will block the back side of the object(card).
         border-radius: 3px;
         overflow: hidden; //For blocking overridden objects at corner.
