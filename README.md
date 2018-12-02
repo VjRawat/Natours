@@ -4,3 +4,7 @@
 
 ### Example project of udemy 
     Credit: jonasschmedtmann
+    
+## Install dependencies:
+    1. npm install
+    2. node-modules install
